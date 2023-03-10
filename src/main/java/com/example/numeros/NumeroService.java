@@ -11,6 +11,8 @@ public class NumeroService {
             if(String.valueOf(n).startsWith("13")){
                 contadorNumero++;
             }
+
+            contadorBucle++;
             if( contadorBucle==n){
                 break;
             }
