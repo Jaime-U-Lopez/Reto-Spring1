@@ -3,6 +3,20 @@ package com.example.numeros;
 public class NumeroService {
 
     public Integer obtenerTotal(Integer n) {
+
+        int contadorNumero= 0;
+        int contadorBucle=0;
+
+        while( true){
+            if(String.valueOf(n).startsWith("13")){
+                contadorNumero++;
+            }
+            if( contadorBucle==n){
+                break;
+            }
+        }
+
+        return  n-contadorNumero;
         /** El numero 13 de la mala suerte
          * Crear un algoritmo que pasado un numero n debe retonar
          * la cantidad de numeros que hay sin contar los que contengan
@@ -23,6 +37,6 @@ public class NumeroService {
          * numeros a descartar = 13, 130..139 , 1300...1399.
          * total numeros: 3699
          */
-        return n;
+
     }
 }
